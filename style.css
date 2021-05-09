@@ -1,0 +1,63 @@
+#mountainanimation{
+    height: 100vh;
+    width: 100%;
+}
+
+#trees{
+    animation:treeflips 2s ease infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes treeflips{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* #sun{
+    animation:bouncingsun 2s linear infinite ;
+    transform-origin: unset;
+    transform-box: fill-box;
+}
+
+@keyframes bouncingsun {
+    from{
+        transform: translateY(40deg);
+    }
+    to{
+        transform: translateY(-40deg);
+    }
+} */
+
+#sun {
+    
+    animation: bounce 1s infinite alternate;
+    
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(285px);
+    }
+  }
+
+  #character {
+      animation: move 5s ease infinite alternate ;
+  }
+  @keyframes move {
+      from{
+          transform: translateX(95px);
+          opacity: 1;
+      }
+      to{
+          transform: translateX(748px);
+          opacity: 0;
+      }
+  }
+  
